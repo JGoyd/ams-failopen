@@ -8,6 +8,11 @@ A critical fail-open flaw in Apple’s AppleMediaServices framework allows reque
 
 When the Bag cannot be retrieved—due to DNS manipulation, timeouts, or network interference—AppleMediaServices daemons disable Mescal/Absinthe signing and send unsigned requests to Apple servers. These requests lack integrity protections and expose users to downgrade and replay attacks.
 
+**Log Evidence:**
+
+https://ia600207.us.archive.org/11/items/fail-open-log-evidence-in-apple-media-services/Fail%20Open%20Log%20Evidence%20in%20AppleMediaServices.mov
+
+
 **Discovery**
 
 * Date: August 20, 2025
@@ -18,12 +23,8 @@ When the Bag cannot be retrieved—due to DNS manipulation, timeouts, or network
 
 **Affected Systems**
 
-All Apple platforms that use `AppleMediaServices.framework` are affected:
+All Apple platforms that use `AppleMediaServices.framework` are affected.
 
-* iOS versions 14 through 18.6+
-* macOS versions Big Sur through Sonoma
-* tvOS version 14 and above
-* watchOS version 7 and above
 
 Impacted daemons include:
 
@@ -61,6 +62,7 @@ Exploit Steps:
 Result:
 
 Unsigned traffic is transmitted to Apple endpoints without verification. This allows manipulation, replay, and other integrity risks.
+
 
 Disclaimer:
 
