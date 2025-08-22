@@ -2,7 +2,7 @@
 
 **Summary**
 
-This issue constitutes a Zero-Day vulnerability and reflects a systemic design flaw in `AppleMediaServices.framework`, rather than a regression or version-specific bug.
+This issue constitutes a live Zero-Day vulnerability and reflects a systemic design flaw in `AppleMediaServices.framework`, rather than a regression or version-specific bug.
 
 A critical fail-open flaw in Apple’s AppleMediaServices framework allows request signing to be silently disabled if a remote configuration file (the "Bag") fails to load. This affects iOS, macOS, tvOS, and watchOS.
 
