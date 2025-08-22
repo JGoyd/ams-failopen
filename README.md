@@ -101,5 +101,3 @@ CVSS Score (Preliminary): 9.1 Critical
 Vector: CVSS:3.1/AV\:N/AC\:L/PR\:N/UI\:N/S\:C/C\:L/I\:H/A\:N
 
 ---
-
-Let me know if you’d like this styled for a PDF export or bundled with your other disclosure assets.
