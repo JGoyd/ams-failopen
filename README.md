@@ -101,3 +101,7 @@ CVSS Score (Preliminary): 9.1 Critical
 Vector: CVSS:3.1/AV\:N/AC\:L/PR\:N/UI\:N/S\:C/C\:L/I\:H/A\:N
 
 ---
+
+## Why This Matters
+
+Apple devices rely on signed requests for trust — from the App Store to media playback. If those signatures vanish whenever a config file can’t load, attackers on a Wi-Fi network can strip away integrity and inject or replay traffic without the user knowing. A single dropped Bag request means Apple’s security guarantees fail open.
