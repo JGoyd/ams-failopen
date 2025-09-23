@@ -18,15 +18,13 @@ https://ia600207.us.archive.org/11/items/fail-open-log-evidence-in-apple-media-s
 * Date: August 20, 2025
 * Type: Active Zero-Day
 * Status: Unpatched
-* CVSS (Preliminary): 9.1 Critical
-* Vector: CVSS:3.1/AV\:N/AC\:L/PR\:N/UI\:N/S\:C/C\:L/I\:H/A\:N
 
 **Affected Systems**
 
 All Apple platforms that use `AppleMediaServices.framework` are affected.
 
 
-Impacted daemons include:
+**Impacted daemons include:**
 
 * appstored (App Store services)
 * amsengagementd (Media and preview endpoints)
@@ -64,10 +62,6 @@ Result:
 Unsigned traffic is transmitted to Apple endpoints without verification. This allows manipulation, replay, and other integrity risks.
 
 
-Disclaimer:
-
-This proof of concept was not executed against production Apple infrastructure. All observations are based on local logs and controlled network conditions. No unauthorized probing or exploitation was performed.
-
 **Threat Models**
 
 * Rogue public Wi-Fi access points that prevent Bag retrieval
@@ -96,9 +90,6 @@ This proof of concept was not executed against production Apple infrastructure. 
 * Affects foundational services across all major Apple platforms
 * Bypasses authentication headers
 * Enables replay and downgrade scenarios
-
-CVSS Score (Preliminary): 9.1 Critical
-Vector: CVSS:3.1/AV\:N/AC\:L/PR\:N/UI\:N/S\:C/C\:L/I\:H/A\:N
 
 ---
 
